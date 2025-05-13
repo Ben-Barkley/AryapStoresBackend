@@ -23,7 +23,7 @@ namespace Aryap.Shared.UnitOfWork
         {
             if (!_repositories.ContainsKey(typeof(T)))
             {
-                _repositories[typeof(T)] = new GenericRepository<T>(_context);
+                _repositories[typeof(T)] = new Repository<T>(_context);
             }
 
             return (IRepository<T>)_repositories[typeof(T)];

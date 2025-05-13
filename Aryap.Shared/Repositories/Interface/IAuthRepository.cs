@@ -1,6 +1,12 @@
-﻿namespace Aryap.Data.Repositories.Interface
-{
-    public interface IAuthRepository
-    {
-    }
-}
+﻿//namespace Aryap.Shared.Repositories.Interface
+//{
+//    public interface IAuthRepository<T> where T : class
+//    {
+
+//    }
+//}
+
+
+
+
+

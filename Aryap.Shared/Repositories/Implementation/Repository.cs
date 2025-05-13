@@ -6,12 +6,12 @@ using Aryap.Shared.Repositories.Interface;
 
 namespace Aryap.Shared.Repositories.Implementation
 {
-    public class GenericRepository<T> : IRepository<T> where T : class
+    public class Repository<T> : IRepository<T> where T : class
     {
         protected readonly DbContext _context;
         protected readonly DbSet<T> _dbSet;
 
-        public GenericRepository(DbContext context)
+        public Repository(DbContext context)
         {
             _context = context;
             _dbSet = _context.Set<T>();
@@ -34,7 +34,7 @@ namespace Aryap.Shared.Repositories.Implementation
 
         public async Task UpdateAsync(T entity)
         {
-          _dbSet.Update(entity);
+            _dbSet.Update(entity);
         }
 
         public async Task DeleteAsync(int id)
