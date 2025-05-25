@@ -1,5 +1,5 @@
 using Aryap.Core;
-using Aryap.Core.Services.Implementations;
+using Aryap.Core.Services;
 using Aryap.Core.Services.Interfaces;
 using Aryap.Data.Entities;
 using Aryap.Shared.Repositories.Implementation;

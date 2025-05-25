@@ -7,7 +7,7 @@ using Shared.DTos;
 //using Aryap.Shared.Models;
 using Aryap.Shared.Repositories.Interface;
 
-namespace Aryap.Core.Services.Implementations
+namespace Aryap.Core.Services
 {
     public class ClothesService : IClothesService
     {
@@ -116,7 +116,7 @@ namespace Aryap.Core.Services.Implementations
                 var cloth = await _clothRepository.GetByIdAsync(item.ClothId);
                 if (cloth == null || cloth.Stock < item.Quantity)
                 {
-                    throw new System.Exception($"Insufficient stock for Cloth ID {item.ClothId}");
+                    throw new Exception($"Insufficient stock for Cloth ID {item.ClothId}");
                 }
 
                 cloth.Stock -= item.Quantity;

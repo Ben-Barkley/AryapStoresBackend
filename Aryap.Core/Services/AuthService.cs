@@ -8,7 +8,7 @@ using Aryap.Shared.Repositories.Interface;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Aryap.Core.Services.Implementations
+namespace Aryap.Core.Services
 {
     public class AuthService : IAuthService
     {

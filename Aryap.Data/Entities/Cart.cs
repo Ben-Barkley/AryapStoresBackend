@@ -1,9 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+﻿using Aryap.Shared.Abstractions;
 
 namespace Aryap.Data.Entities
 {
     // Represents cart items in the database
-    public class Cart
+    public class Cart : BaseEntity
     {
         public int CartItemId { get; set; }
         public int CartId { get; set; }     
